@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes gradient-x {
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 100%;
+            }
+        }
+
+        .animate-gradient-x {
+            background-size: 200% auto;
+            animation: gradient-x 8s linear infinite alternate;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-900">
+    <header class="bg-gray-900 shadow sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-indigo-600">ARMAN</h1>
+            <nav class="relative">
+                <button id="nav-toggle" class="sm:hidden text-indigo-600 focus:outline-none" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <div id="nav-menu" class="hidden sm:flex space-x-6 font-medium text-lg">
+                    <a href="#about" class="relative group">
+                        <span class="text-indigo-600 hover:text-indigo-400">About</span>
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#services" class="relative group">
+                        <span class="text-indigo-600 hover:text-indigo-400">Services</span>
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#projects" class="relative group">
+                        <span class="text-indigo-600 hover:text-indigo-400">Projects</span>
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="relative group">
+                        <span class="text-indigo-600 hover:text-indigo-400">Contact</span>
+                        <span
+                            class="absolute left-0 -bottom-1 w-0 h-0.5 bg-indigo-500 transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
+
+                <div id="mobile-menu"
+                    class="sm:hidden hidden flex-col mt-4 space-y-3 font-medium text-lg bg-gray-800 rounded-md p-4 absolute right-0 w-48 shadow-lg">
+                    <a href="#about" class="block text-indigo-400 hover:text-indigo-300">About</a>
+                    <a href="#services" class="block text-indigo-400 hover:text-indigo-300">Services</a>
+                    <a href="#projects" class="block text-indigo-400 hover:text-indigo-300">Projects</a>
+                    <a href="#contact" class="block text-indigo-400 hover:text-indigo-300">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section
+        class="flex flex-col bg-gray-900 justify-center items-center text-white animate-gradient-x min-h-screen px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 py-12">
+
+            <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+                <p class="text-lg mb-2">Hello, It's me</p>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Mohammad Arman</h2>
+                <p class="text-base md:text-lg mb-6 max-w-xl mx-auto md:mx-0">
+                    Hi, I'm Mohammad Arman! I'm a passionate full-stack developer who loves working with Django and
+                    React. During my 1.5 years at Phitron, I built projects like an eCommerce platform, hotel booking,
+                    and hospital management system. I enjoy solving challenges and creating web apps that people love to
+                    use.
+                </p>
+                <a href="git remote add origin https://github.com/mohammadarmanhossen/portfolio-.git git push -u origin main"
+                    class="inline-block bg-white text-indigo-600 font-bold px-6 py-3 rounded-lg shadow hover:shadow-lg transition-transform duration-300 hover:-translate-y-1 hover:scale-105">
+                    Download CV
+                </a>
+            </div>
+
+            <div class="flex-1 flex justify-center" data-aos="fade-left">
+                <img src="Image/Arman-pic.jpg" alt="Mohammad Arman"
+                    class="rounded-full shadow-xl object-cover w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96" />
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="about" class="relative py-20 bg-gray-900 from-gray-900 via-gray-800 to-black overflow-hidden">
+        <div class="absolute inset-0 opacity-30  to-transparent">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4">
+            <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-6 text-center drop-shadow-lg"
+                data-aos="fade-up">
+                About Me
+            </h3>
+            <p class="text-lg text-gray-300 text-center max-w-2xl mx-auto mb-12" data-aos="fade-up"
+                data-aos-delay="100">
+                Technologies I love working with – from building beautiful responsive UIs to designing scalable backends
+                and
+                crafting seamless user experiences.
+            </p>
+
+            <div class="grid gap-10 md:grid-cols-3">
+
+
+                <div class="bg-white/10 backdrop-blur-md  rounded-xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2 text-center"
+                    data-aos="fade-up">
+                    <div class="text-indigo-400 text-4xl mb-4">🎨</div>
+                    <h4 class="text-2xl font-bold text-white mb-2">Frontend Magic</h4>
+                    <p class="text-gray-300 mb-4">Crafting beautiful, responsive interfaces</p>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">Next.js</span>
+                    </div>
+                </div>
+
+
+                <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2 text-center"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-purple-400 text-4xl mb-4">🛠️</div>
+                    <h4 class="text-2xl font-bold text-white mb-2">Backend Power</h4>
+                    <p class="text-gray-300 mb-4">Building scalable, secure systems</p>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">Django</span>
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">DRF</span>
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        <span class="bg-indigo-600/20 text-indigo-300  px-3 py-1 rounded-full text-sm">Superbase</span>
+                    </div>
+                </div>
+
+
+                <div class="bg-white/10 backdrop-blur-md  rounded-xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2 text-center"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-pink-400 text-4xl mb-4">🧩</div>
+                    <h4 class="text-2xl font-bold text-white mb-2">Design & Tools</h4>
+                    <p class="text-gray-300 mb-4">Creating seamless user experiences</p>
+                    <div class="flex flex-wrap justify-center gap-2">
+                        <span class="bg-indigo-600/20 text-indigo-300 px-3 py-1 rounded-full text-sm">Figma</span>
+                        <span class="bg-indigo-600/20 text-indigo-300  px-3 py-1 rounded-full text-sm">Canvas</span>
+                        <span class="bg-indigo-600/20 text-indigo-300 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-indigo-600/20 text-indigo-300  py-1 rounded-full text-sm">GitHub</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="relative py-20 bg-gray-900 from-gray-900 via-gray-800 to-black overflow-hidden">
+
+
+
+        <div class="relative max-w-7xl mx-auto px-4">
+            <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-6 text-center drop-shadow-lg"
+                data-aos="fade-up">
+                Latest Projects
+            </h3>
+            <p class="text-lg text-gray-300 text-center max-w-2xl mx-auto mb-12" data-aos="fade-up"
+                data-aos-delay="100">
+                I built projects like a ecommerce platform,hotel booking, and
+                hospital management system. I enjoy solving challenges and creating web apps that people love to use.
+            </p>
+
+
+            <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02]"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <img src="Image/Skyline-img.png" alt="Project Screenshot" class="h-56 w-full object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-2">Hotel Booking Website</h4>
+                        <p class="text-gray-300 mb-4 flex-grow">Responsive hotel booking website user auth, and dynamic
+                            hotel
+                            management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-600/20 text-indigo-300  px-2 py-1 rounded-full text-sm">Tailwindcss</span>
+                            <span class="bg-indigo-600/20 text-indigo-300 px-2 py-1 rounded-full text-sm">Django</span>
+                            <span class="bg-indigo-600/20 text-indigo-300  py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-indigo-600/20 text-indigo-300 py-1 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+
+                        <div class="flex gap-1.5 md:gap-3 mt-auto ">
+
+
+                            <a href="https://skyline-frontend-five.vercel.app/"
+                                class="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 20 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                Live
+                            </a>
+
+
+                            <a href="https://skyline-backend.vercel.app/"
+                                class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 4h16v4H4V4zM4 12h16v4H4v-4zM4 20h16v0H4v0z" />
+                                </svg>
+                                Server
+                            </a>
+
+
+                            <a href="https://github.com/mohammadarmanhossen/Skyline_frontend"
+                                class="flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-lg hover:bg-white/30 transition">
+                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.2 11.4c.6.1.8-.26.8-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.76-1.33-1.76-1.1-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.3 3.49.99.1-.78.42-1.3.76-1.6-2.66-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.13-.3-.54-1.52.1-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.62-5.48 5.92.43.38.81 1.1.81 2.22v3.29c0 .31.21.69.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02]"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <img src="Image/Glamify-img.png" alt="Project Screenshot" class="h-56 w-full object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-2">Ecommerce Website</h4>
+                        <p class="text-gray-300 mb-4 flex-grow">Responsive ecommerce website with user auth, and dynamic
+                            product
+                            management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-600/20 text-indigo-300  px-2 py-1 rounded-full text-sm">Tailwindcss</span>
+                            <span class="bg-indigo-600/20 text-indigo-300 px-2 py-1 rounded-full text-sm">Django</span>
+                            <span
+                                class="bg-indigo-600/20 text-indigo-300  px-2 py-1 rounded-full text-sm">JavaScript</span>
+                            <span
+                                class="bg-indigo-600/20 text-indigo-300  px-2 py-1 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+
+                        <div class="flex gap-1.5 md:gap-3 mt-auto ">
+
+                            <a href="https://glamify-frontend.vercel.app/"
+                                class="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                Live
+                            </a>
+
+
+                            <a href="https://glamify-backend-ten.vercel.app/"
+                                class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 4h16v4H4V4zM4 12h16v4H4v-4zM4 20h16v0H4v0z" />
+                                </svg>
+                                Server
+                            </a>
+
+
+                            <a href="https://github.com/mohammadarmanhossen/Glamify_frontend"
+                                class="flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-lg hover:bg-white/30 transition">
+                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.2 11.4c.6.1.8-.26.8-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.76-1.33-1.76-1.1-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.3 3.49.99.1-.78.42-1.3.76-1.6-2.66-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.13-.3-.54-1.52.1-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.62-5.48 5.92.43.38.81 1.1.81 2.22v3.29c0 .31.21.69.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md  rounded-xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl hover:scale-[1.02]"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <img src="Image/blanck-img.webp" alt="Project Screenshot" class="h-56 w-full object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="text-2xl font-bold text-white mb-2">Upcomming Project</h4>
+                        <p class="text-gray-300 mb-4 flex-grow">Responsive blog with CMS, user auth, and dynamic content
+                            management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-indigo-600/20 text-indigo-300  px-2 py-1 rounded-full text-sm">Tailwindcss</span>
+                            <span class="bg-indigo-600/20 text-indigo-300  px-2 py-1 rounded-full text-sm">Django</span>
+                            <span class="bg-indigo-600/20 text-indigo-300  py-1 rounded-full text-sm">React</span>
+                            <span
+                                class="bg-indigo-600/20 text-indigo-300  px-2 py-1 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+
+                        <div class="flex gap-1.5 md:gap-3 mt-auto ">
+
+                            <a href="#"
+                                class="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                Live
+                            </a>
+
+
+                            <a href="#"
+                                class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition">
+                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 4h16v4H4V4zM4 12h16v4H4v-4zM4 20h16v0H4v0z" />
+                                </svg>
+                                Server
+                            </a>
+
+                            <a href="#"
+                                class="flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-lg hover:bg-white/30 transition">
+                                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.2 11.4c.6.1.8-.26.8-.58v-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.38-1.33-1.76-1.33-1.76-1.1-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.8 1.3 3.49.99.1-.78.42-1.3.76-1.6-2.66-.31-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.13-.3-.54-1.52.1-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.28-1.23 3.28-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.62-5.48 5.92.43.38.81 1.1.81 2.22v3.29c0 .31.21.69.82.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-900  relative overflow-hidden">
+
+        <div class="absolute inset-0 opacity-30  to-transparent">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4">
+            <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-6 text-center drop-shadow-lg"
+                data-aos="fade-up">
+                Our Services
+            </h3>
+            <p class="text-lg text-gray-300 text-center max-w-2xl mx-auto mb-12" data-aos="fade-up"
+                data-aos-delay="100">
+                I offer end-to-end web development—from beautiful, responsive UIs to robust, scalable backends. My goal
+                is to craft seamless, user-focused experiences that truly solve problems.
+            </p>
+
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="text-center bg-white/10 backdrop-blur-lg rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all hover:-translate-y-3"
+                    data-aos="fade-up">
+                    <div class="mb-4 text-indigo-400 text-5xl">
+                        💻
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Software Developer</h4>
+                    <p class="text-gray-200 mb-6">
+                        Expert in building efficient, maintainable, and scalable software solutions tailored to your
+                        business needs.
+                    </p>
+                    <a href="#contact"
+                        class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-600 transition">
+                        Read More
+                    </a>
+                </div>
+
+                <div class="text-center bg-white/10 backdrop-blur-lg rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all hover:-translate-y-3"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-4 text-purple-400 text-5xl">
+                        🗄️
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Database Management</h4>
+                    <p class="text-gray-200 mb-6">
+                        Managing, organizing, and securing your data with expert database design and administration
+                        services.
+                    </p>
+                    <a href="#contact"
+                        class="inline-block bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600 transition">
+                        Read More
+                    </a>
+                </div>
+
+                <div class="text-center bg-white/10 backdrop-blur-lg  rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all hover:-translate-y-3"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="mb-4 text-pink-400 text-5xl">
+                        🌐
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Full Stack Web Development</h4>
+                    <p class="text-gray-200 mb-6">
+                        Complete web solutions from frontend to backend using modern technologies and best practices.
+                    </p>
+                    <a href="#contact"
+                        class="inline-block bg-pink-500 text-white px-4 py-2 rounded-lg shadow hover:bg-pink-600 transition">
+                        Read More
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-6 text-center drop-shadow-lg" data-aos="fade-up">
+        Let's Contact
+    </h3>
+    <p class="text-lg text-gray-300 text-center max-w-2xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="100">
+        Have a project in mind or just want to say hello? I'm always open to new opportunities and collaborations. Feel
+        free to drop a message!
+    </p>
+
+    <section id="contact" class="max-w-4xl mx-auto  bg-white/10 shadow-2xl rounded-xl p-10 md:p-16 my-20"
+        data-aos="fade-up">
+
+
+        <form class="flex flex-col gap-6 max-w-xl w-full mx-auto px-4">
+
+            <div class="flex flex-col md:flex-row gap-6">
+                <input type="text" placeholder="Your Name"
+                    class="flex-1 border border-gray-300 rounded px-5 py-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                    required />
+                <input type="email" placeholder="Your Email"
+                    class="flex-1 border border-gray-300 rounded px-5 py-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                    required />
+            </div>
+            <textarea placeholder="Your Message" rows="5"
+                class="border border-gray-300 rounded px-5 py-4 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition resize-none"
+                required></textarea>
+            <button type="submit"
+                class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold py-4 rounded shadow-xl hover:from-indigo-600 hover:to-purple-700 transition transform hover:scale-105">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+
+    <footer class="text-center text-gray-300 py-6 text-sm">
+        &copy; 2025 Arman. All rights reserved.
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        navToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
